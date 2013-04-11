@@ -38,6 +38,16 @@ namespace RomanNumeral
         [TestCase("LXXX", 80)]
         [TestCase("XC", 90)]
         [TestCase("C", 100)]
+        [TestCase("CXXIV", 124)]
+        [TestCase("CXCIX", 199)]
+        [TestCase("D", 500)]
+        [TestCase("CDXXI", 421)]
+        [TestCase("DXXIV", 524)]
+        [TestCase("M", 1000)]
+        [TestCase("MCCCIX", 1309)]
+        [TestCase("MCMXCIX", 1999)]
+        [TestCase("MMI", 2001)]
+        [TestCase("MMCMXCIV", 2994)]
         public void givenRomanReturnsExpectedArabic(string roman, int expectedArabic)
         {
             var actualArabic = roman.RomanToArabic();

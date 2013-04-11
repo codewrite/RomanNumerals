@@ -2,8 +2,8 @@
 {
     public static class RomanNumeralParser
     {
-        private static char[] romanLetters = { 'I', 'V', 'X', 'L', 'C' };
-        private static int[] arabicNumbers = { 1, 5, 10, 50, 100 };
+        private static char[] romanLetters = { 'I', 'V', 'X', 'L', 'C', 'D', 'M' };
+        private static int[] arabicNumbers = { 1, 5, 10, 50, 100, 500, 1000 };
 
         public static int RomanToArabic(this string romanNumeral)
         {
